@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Celcius</label>
+    <input type="text" id="inpt1" onchange="x3(this.value)" oninput="x3(this.value)">
+    <label>to Kelvin = </label><span id="res"></span>
+
+    <script>
+        function x3(n){
+            x = parseFloat(n);
+            document.getElementById("res").innerHTML = x +273.15; 
+
+        }
+    </script>
+</body>
+</html>
